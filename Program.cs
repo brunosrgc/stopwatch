@@ -63,7 +63,7 @@ namespace Stopwatch
             if (!int.TryParse(input.Substring(0, input.Length - 1), out time))
                 return false;
 
-            if (type == 'm') // Convertendo minutos para segundos
+            if (type == 'm')
                 time *= 60;
 
             return true;
